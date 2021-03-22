@@ -1,5 +1,6 @@
 import React from 'react';
 import MiniBook from './MiniBook';
+import './MiniBook.css';
 
 function App() {
   return (
