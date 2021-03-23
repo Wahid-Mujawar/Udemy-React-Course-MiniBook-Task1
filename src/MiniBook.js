@@ -20,8 +20,15 @@ function BookList () {
       img={firstbook.img}
       title={firstbook.title}
       author={firstbook.author}
-      />
+      ></Book>
+
+      <p>Sudha Murthy always inspired everyone to 
+        lead a simple life and listen to their conscience. 
+        She believes the beauty of a person lies in simplicity and confidence; 
+        so she says live life for yourself and not for others. Every human
+        being should run their own marathon</p>
        <Book 
+       
       img={secondbook.img}
       title={secondbook.title}
       author={secondbook.author}
