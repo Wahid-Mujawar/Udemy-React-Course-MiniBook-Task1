@@ -9,15 +9,17 @@ const books = [
   },
 
   {
+    id : 2,
     img :"https://images-eu.ssl-images-amazon.com/images/I/71KKZlVjbwL._AC_UL200_SR200,200_.jpg",
     title : "Wings of Fire An Autobiography",
     author : "A. P. J. Abdul Kalam"
   },
   
   {
-    img :"https://images-eu.ssl-images-amazon.com/images/I/71KKZlVjbwL._AC_UL200_SR200,200_.jpg",
-    title : "Wings of Fire An Autobiography",
-    author : "A. P. J. Abdul Kalam"
+    id : 3,
+    img :"https://images-eu.ssl-images-amazon.com/images/I/715gDLrD9JL._AC_UL200_SR200,200_.jpg",
+    title : "The Power of Your Subconscious Mind",
+    author : "Joseph Murphy"
   },
 ];
 
@@ -32,7 +34,7 @@ function BookList () {
 }
 
 const Book = (props) => {
-  const {img, title, author} = props;
+  const {img, title, author} = props.book;
   return (
   <article className='book'>
     <img src={img} alt=''/>  
