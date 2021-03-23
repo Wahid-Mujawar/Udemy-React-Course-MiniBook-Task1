@@ -21,8 +21,11 @@ const books = [
     title : "The Power of Your Subconscious Mind",
     author : "Joseph Murphy"
   },
-];
+]
 
+const clickHandler = () => {
+
+}
 function BookList () {
   return(
     <section className="booklist">
