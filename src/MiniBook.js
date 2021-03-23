@@ -20,15 +20,15 @@ function BookList () {
       img={firstbook.img}
       title={firstbook.title}
       author={firstbook.author}
-      ></Book>
-
-      <p>Sudha Murthy always inspired everyone to 
+      >
+        <p>Sudha Murthy always inspired everyone to 
         lead a simple life and listen to their conscience. 
         She believes the beauty of a person lies in simplicity and confidence; 
         so she says live life for yourself and not for others. Every human
         being should run their own marathon</p>
+      </Book>
        <Book 
-       
+
       img={secondbook.img}
       title={secondbook.title}
       author={secondbook.author}
@@ -37,12 +37,13 @@ function BookList () {
   )
 }
 const Book = (props) => {
-  
+  const {img, title, author} = props;
   return (
   <article className='book'>
-    <img src={props.img}/>  
-    <h4>{props.title}</h4>
-    <h5>{props.author}</h5>
+    <img src={img} alt=''/>  
+    <h4>{title}</h4>
+    <h5>{author}</h5>
+    {props.children}
   </article>
   )
 }

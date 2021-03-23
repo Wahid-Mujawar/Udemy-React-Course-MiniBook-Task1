@@ -25,7 +25,11 @@ body {
   border-radius: 1rem;
   padding: 1rem 2rem;
 }
-.book h4 {
+.book h5 {
   color: #615d98;
   font-size: 0.85rem;
+  margin-top: 0.3rem;
+}
+.book p{
+  margin-top: 0.5rem;
 }
