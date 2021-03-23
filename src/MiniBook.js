@@ -40,6 +40,8 @@ const Book = (props) => {
     <img src={img} alt=''/>  
     <h4>{title}</h4>
     <h5>{author}</h5>
+    <input type="button" onClick={clickHandler}></input>
+    
   </article>
   )
 }
