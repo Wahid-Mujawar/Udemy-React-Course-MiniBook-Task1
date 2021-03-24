@@ -48,6 +48,7 @@ const Book = (props) => {
     <h5>{author}</h5>
     <button type="button" onClick={clickHandler}>On Click</button>
     
+  </article>
   )
 }
 
