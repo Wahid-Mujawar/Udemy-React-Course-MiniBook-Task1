@@ -40,7 +40,9 @@ const clickHandler = () => {
 const Book = (props) => {
   const {img, title, author} = props.book;
   return (
-  <article className='book'>
+  <article className='book' onMouseOver={()=>{
+    console.log('title')
+  }}>
     <img src={img} alt=''/>  
     <h4>{title}</h4>
     <h5>{author}</h5>
