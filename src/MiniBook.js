@@ -23,9 +23,6 @@ const books = [
   },
 ]
 
-const clickHandler = () => {
-
-}
 function BookList () {
   return(
     <section className="booklist">
@@ -36,6 +33,10 @@ function BookList () {
   );
 }
 
+const clickHandler = () => {
+  alert("Mini Book");
+}
+
 const Book = (props) => {
   const {img, title, author} = props.book;
   return (
@@ -43,7 +44,7 @@ const Book = (props) => {
     <img src={img} alt=''/>  
     <h4>{title}</h4>
     <h5>{author}</h5>
-    <input type="button" onClick={clickHandler}></input>
+    <button type="button" onClick={clickHandler}>On Click</button>
     
   </article>
   )
